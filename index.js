@@ -27,7 +27,7 @@ app.use("/seller", sellerUserRouter);
 app.use("/seller", SellerAuthenticate, sellerProductsRouter);
 app.use("/products", allProductsRouter);
 
-app.listen(process.env.port, async () => {
+app.listen(process.env.PORT, async () => {
   try {
     connection;
     console.log("connected to DB at 4500");
